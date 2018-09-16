@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "ShowDepartment";
+}
+
+
+<h2>ShowDepartment</h2>
+
+<table border="1">
+    <tr>
+        <td>Code</td>
+        <td>Department</td>
+    </tr>
+    @foreach (var data in ViewBag.allDepartments)
+    {
+        <tr>
+            <td>@data.DepartmentCode</td>
+            <td>@data.DepartmentName</td>
+        </tr>
+    }
+
+</table>
